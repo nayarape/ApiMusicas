@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API de Músicas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎶 Artistas e Músicas 🎤</h1>
+
+    <section>
+      <h2>Adicionar Artista</h2>
+      <input type="text" id="artistName" placeholder="Nome do Artista" />
+      <input type="text" id="genre" placeholder="Gênero" />
+      <button onclick="addArtist()">Salvar Artista</button>
+    </section>
+
+    <section>
+      <h2>Adicionar Música</h2>
+      <input type="text" id="songTitle" placeholder="Título da Música" />
+      <!-- substituído o input de ID por um select -->
+      <select id="songArtistSelect">
+        <option value="">Selecione um artista</option>
+      </select>
+      <button onclick="addSong()">Salvar Música</button>
+    </section>
+
+    <section>
+      <h2>Artistas Cadastrados</h2>
+      <ul id="artistList"></ul>
+    </section>
+
+    <section>
+      <h2>Músicas Cadastradas</h2>
+      <ul id="songList"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
